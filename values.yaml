@@ -5,8 +5,8 @@
 replicaCount: 2
 
 image:
-  repository: gcr.io/google-samples/gb-frontend:v4
-  tag: v1
+  repository: gcr.io/google-samples/gb-frontend
+  tag: v4
   pullPolicy: Always
 
 # For some dev env (like minikube), you may need to set the type to NodePort
