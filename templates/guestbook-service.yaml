@@ -12,6 +12,7 @@ spec:
   ports:
   - port: {{ .Values.service.port }}
     targetPort: http-server
+    nodePort: 31174
   selector:
     app.kubernetes.io/name: {{ include "guestbook.name" . }}
     app.kubernetes.io/instance: {{ .Release.Name }}
